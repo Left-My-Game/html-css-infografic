@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpg" href="images/fabicon.jpg">
+        <title>Page 3</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color:rgb(253, 233, 206);">
+        <header style="background-color: rgb(214, 189, 156);">
+            <h1>This Website is used for information on HTML and CSS</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><h4>Home</h4></a></li>
+                <li><a href="video.html"><h4>Page 2</h4></a></li>
+                <li><a href="page3.html"><h4>Page 3</h4></a></li>
+                <li><a href="page4.html"><h4>Page 4</h4></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1><big><mark style="background-color: tomato;">NOTE THIS PAGE IS FAKE</mark></big></h1>
+            <h1><big><mark style="background-color: tomato;">DO NOT USE REAL INFORMATION</mark></big></h1>
+            
+            <h1><big><mark style="background-color: tomato;">NO INFORMATION IS ACTUALLY SAVED</mark></big></h1>
+            <form>
+                
+                <label for="username">Username:*</label>
+                <input type="text" id="username" placeholder="Please Type a FAKE Username" minlength="6" maxlength="16" required>
+                
+                <br>
+                <label for="password">Password:*</label>
+                <input type="password" id="password" placeholder="Please Type a FAKE Password" minlength="8" maxlength="24">
+
+                <br>
+                <label for="email">Email:*</label>
+                <input type="email" id="email" placeholder="FAKE@FAKE.com" minlength="8" maxlength="24">
+
+                <br>
+                <label for="phone">Phone Number:</label>
+                <!--                                                              ↓This is a Pattern↓-->
+                <input type="tel" id="phone" placeholder="555-555-5555" pattern="[5]{3}-[5]{3}-[5]{4}">
+
+                <br>
+                <label for="dropdown">Dropdown Menu!</label>
+                <select id="dropdown">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <br>
+                <input type="reset">
+                <input type="submit">
+
+            </form>
+        </main>
+        <footer style="background-color: rgb(214, 189, 156);">
+            <div class="pagination">
+                <a href="video.html"><</a>
+                <a href="index.html">1</a>
+                <a href="video.html">2</a>
+                <a href="page3.html" class="active">3</a>
+                <a href="page4.html">4</a>
+                <a href="page4.html">></a>
+            </div>
+        </footer>
+
+
+    </body>
+</html>

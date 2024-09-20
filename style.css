@@ -1,0 +1,186 @@
+#div1{
+    background-color: black;
+    border: 5px solid;
+    border-color: rgb(255, 0, 0);
+}
+#heading1-1{
+    color: white;
+}
+#p1{
+    border: 3px solid rgb(147, 255, 250);
+    border-radius: 10px;
+}
+#heading1-2{
+    border-bottom: 4px solid rgb(241, 56, 56);
+    border-top: 4px dotted yellow;
+    border-right: 4px solid rgb(82, 245, 82);
+    border-left: 4px dotted rgb(255, 136, 0);
+    text-shadow: 3px 5px 4px rgb(250, 104, 104), -3px -5px 4px rgb(112, 238, 255);
+} 
+body{
+    font-family: "Quicksand", sans-serif;
+}
+p::selection{
+    color: rgb(17, 196, 17);
+    background-color: rgb(27, 27, 27);
+}
+h1::selection{
+    color: rgb(17, 196, 17);
+    background-color: rgb(27, 27, 27);
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 7px 7px 7px;
+    transform: rotateZ(15deg);
+    animation-name: slideLeftRotate;
+    animation-duration: 2s;
+}
+#overflow{
+    border: 2px solid;
+    height: 75px;
+    width: 650px;
+    overflow: auto;
+}
+header{
+    text-align: center;
+    padding: 0px;
+}
+footer{
+    text-align: center;
+}
+#checkmarkul li::marker{
+    content: "✔";
+    color: rgb(45, 184, 45);
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: rgb(0, 255, 55);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: rgb(189, 252, 181);
+    border-radius: 5px;
+}
+header{
+    border: 3px solid black;
+}
+footer{
+    border: 3px solid black;
+}
+.dropdown{
+    display: inline-block;
+    margin-bottom: 33px;
+}
+.dropdown button{
+    background-color: rgb(51, 211, 51);
+    color: white;
+    padding: 10px 15px;
+    border: 3px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown b{
+    font-size: larger;
+}
+.dropdown:hover button{
+    background-color: rgb(54, 255, 54);
+}
+.dropdown a:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(214, 189, 156);
+    overflow: hidden;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: right;
+}
+.navbar a:hover{
+    background-color: rgb(230, 217, 200);
+    padding-right: 15px;
+}
+.navbar li{
+    float: left;
+}
+.container{
+    display: flex;
+    border: 6px solid black;
+    height: 90vh;
+}
+.square{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#square1{
+    background-color: rgb(248, 91, 63);
+}
+#square2{
+    background-color: rgb(234, 247, 121);
+}
+#square3{
+    background-color: rgb(77, 236, 138);
+}
+#square4{
+    background-color: rgb(48, 173, 245);
+}
+#anim{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(236, 74, 74);
+    font-size: 13em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+@keyframes slideLeft{
+    from{transform: translateX(300%)}
+}
+@keyframes slideRight{
+    to{transform: translateX(300%)}
+}
+@keyframes slideUp{
+    from{transform: translateY(300%)}
+}
+@keyframes slideDown{
+    to{transform: translateY(300%)}
+}
+@keyframes slideLeftRotate{
+    25%{transform: rotateZ(360deg)}
+    from{transform: translateX(300%)}
+}
